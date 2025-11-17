@@ -8,35 +8,6 @@
         <version>3.5.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-<<<<<<< HEAD
-    <groupId>pe.edu.upc.center.seniorhub.residents</groupId>
-    <artifactId>ResidentsServiceApplication</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>residents-service</name>
-    <description>residents-service</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
-    <properties>
-        <java.version>21</java.version>
-    </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-=======
     <groupId>pe.edu.upc.center</groupId>
     <artifactId>residents-microservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -103,7 +74,6 @@
         </dependency>
 
         <!-- Testing -->
->>>>>>> 476afb2389f2efe12c8816c52079452c24e91d89
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -112,12 +82,6 @@
     </dependencies>
 
     <build>
-<<<<<<< HEAD
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-=======
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -160,7 +124,6 @@
                 <configuration>
                     <encoding>UTF-8</encoding>
                 </configuration>
->>>>>>> 476afb2389f2efe12c8816c52079452c24e91d89
             </plugin>
         </plugins>
     </build>
