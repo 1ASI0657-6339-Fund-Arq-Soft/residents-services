@@ -236,7 +236,7 @@ public class ResidentsController {
 
     @Operation(
             summary = "Get a resident's details",
-            description = "Retrieve detailed information about a resident, including medications, medical histories, and mental health records",
+            description = "Retrieve detailed information about a resident.",
             operationId = "getResidentDetails",
             responses = {
                     @ApiResponse(
@@ -261,10 +261,7 @@ public class ResidentsController {
                     var details = new ResidentDetailsResource(
                             resident.getId(),
                             resident.getFullNameAsString(),
-                            resident.getDni(),
-                            resident.getMedication(),
-                            resident.getMedicalHistories(),
-                            resident.getMentalHealthRecords()
+                            resident.getDni()
                     );
                     return ResponseEntity.ok(details);
                 })
