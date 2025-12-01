@@ -9,10 +9,14 @@ public class ResidentDetailsResourceFromEntityAssembler {
         return new ResidentDetailsResource(
                 resident.getId(),
                 resident.getFullNameAsString(),
+<<<<<<< HEAD
                 resident.getDni(),
                 resident.getMedication(),
                 resident.getMedicalHistories(),
                 resident.getMentalHealthRecords()
+=======
+                resident.getDni()
+>>>>>>> develop
         );
     }
 }

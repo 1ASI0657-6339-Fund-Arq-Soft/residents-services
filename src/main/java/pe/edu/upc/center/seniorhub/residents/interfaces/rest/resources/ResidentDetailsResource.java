@@ -1,5 +1,6 @@
 package pe.edu.upc.center.seniorhub.residents.interfaces.rest.resources;
 
+<<<<<<< HEAD
 import pe.edu.upc.center.seniorhub.residents.domain.model.entities.Medication;
 import pe.edu.upc.center.seniorhub.residents.domain.model.entities.MedicalHistory;
 import pe.edu.upc.center.seniorhub.residents.domain.model.entities.MentalHealthRecord;
@@ -13,4 +14,10 @@ public record ResidentDetailsResource(
         List<Medication> medications,
         List<MedicalHistory> medicalHistories,
         List<MentalHealthRecord> mentalHealthRecords
+=======
+public record ResidentDetailsResource(
+        Long id,
+        String fullName,
+        String dni
+>>>>>>> develop
 ) {}

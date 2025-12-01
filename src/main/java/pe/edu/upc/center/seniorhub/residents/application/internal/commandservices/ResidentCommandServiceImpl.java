@@ -25,7 +25,18 @@ public class ResidentCommandServiceImpl implements ResidentCommandService {
             throw new IllegalArgumentException("Resident with DNI " + command.dni() + " already exists");
         }
 
+<<<<<<< HEAD
         Resident resident = new Resident(command);
+=======
+        Resident resident = new Resident(
+            command.dni(),
+            command.fullName(),
+            command.address(),
+            command.birthDate(),
+            command.gender(),
+            command.receipt()
+        );
+>>>>>>> develop
         try {
             this.residentRepository.save(resident);
         } catch (Exception e) {

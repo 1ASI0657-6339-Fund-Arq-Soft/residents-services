@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> develop
 package pe.edu.upc.center.seniorhub.residents.domain.model.aggregates;
 
 import jakarta.persistence.*;
@@ -6,9 +10,12 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import pe.edu.upc.center.seniorhub.residents.domain.model.commands.CreateResidentCommand;
+<<<<<<< HEAD
 import pe.edu.upc.center.seniorhub.residents.domain.model.entities.MedicalHistory;
 import pe.edu.upc.center.seniorhub.residents.domain.model.entities.Medication;
 import pe.edu.upc.center.seniorhub.residents.domain.model.entities.MentalHealthRecord;
+=======
+>>>>>>> develop
 import pe.edu.upc.center.seniorhub.residents.domain.model.valueobjects.Address;
 import pe.edu.upc.center.seniorhub.residents.domain.model.valueobjects.FullName;
 import pe.edu.upc.center.seniorhub.residents.domain.model.valueobjects.ReceiptId;
@@ -47,6 +54,7 @@ public class Resident extends AuditableAbstractAggregateRoot<Resident> {
     @Embedded
     private ReceiptId receipt;
 
+<<<<<<< HEAD
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "resident_id")
     private List<Medication> medication = new ArrayList<>();
@@ -128,8 +136,30 @@ public class Resident extends AuditableAbstractAggregateRoot<Resident> {
     public void removeMentalHealthRecordById(Long mentalHealthRecordId) {
         this.mentalHealthRecords.removeIf(med -> med.getId().equals(mentalHealthRecordId));
     }
+=======
+>>>>>>> develop
 
     public String getFullNameAsString() {
         return fullName.firstName() + " " + fullName.lastName();
     }
+<<<<<<< HEAD
+=======
+        public Resident(String dni, FullName fullName, Address address, Date birthDate, String gender, ReceiptId receipt) {
+        this.dni = dni;
+        this.fullName = fullName;
+        this.address = address;
+        this.birthDate = birthDate;
+        this.gender = gender;
+        this.receipt = receipt;
+    }
+
+    public void updateInformation(String dni, FullName fullName, Address address, Date birthDate, String gender, ReceiptId receipt) {
+        this.dni = dni;
+        this.fullName = fullName;
+        this.address = address;
+        this.birthDate = birthDate;
+        this.gender = gender;
+        this.receipt = receipt;
+    }
+>>>>>>> develop
 }
